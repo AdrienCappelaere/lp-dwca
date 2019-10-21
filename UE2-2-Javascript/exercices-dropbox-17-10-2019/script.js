@@ -42,7 +42,7 @@ b10 = Math.floor(change%200%100%50%20/10);
 b5 = Math.floor(change%200%100%50%20%10/5);
 b1 = Math.floor(change%200%100%50%20%10%5/1);
 
-/* PENSER A SUPPRIMER CE COMMENTAIRE AVANT DE RENDRE LES EXERCICES !!!
+/* PENSER A SUPPRIMER CE COMMENTAIRE ET LE RETOUR A LA LIGNE AVANT DE RENDRE LES EXERCICES !!!
 console.log("Il vous faut "+b200+" billets de 200 manat, "+b100+" billets de 100 manat, "+b50+" billets de 50 manat, 
 "+b20+" billets de 20 manat, "+b10+" billets de 10 manat, "+b5+" billets de 5 manat et "+b1+" billets de 1 manat pour vos "+change+" manat de change.")
 */
