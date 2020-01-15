@@ -1,0 +1,7 @@
+input {
+    width: auto;
+}
+
+input:invalid {
+    background-color: crimson;
+}

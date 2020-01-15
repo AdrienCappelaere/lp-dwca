@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header><h1>PW 1.7 : HTML5 Forms</h1></header>
+    <div><p>Ceci est un quizz créé pour un exercice en HTML et CSS.</p></div>
+    <form>
+        Prénom:<br>
+        <input type="text" value="Prénom" required><br>
+        Nom:<br>
+        <input type="text" value="Nom" required><br>
+        Email:<br>
+        <input type="email" value="monemail@email.com" required><br>
+        Date:<br>
+        <input type="date" value="date"><br>
+        Quel est le résultat de 10 + 2 ?:<br>
+        <input type="radio" name="question1" value="14">14<br>
+        <input type="radio" name="question1" value="14">12<br>
+        <input type="radio" name="question1" value="14">21<br>
+        Quelles marques correspondent à des marques de voiture ?:<br>
+        <input type="checkbox" name="question2" value="Volvo">Volvo<br>
+        <input type="checkbox" name="question2" value="Peugeot">Peugeot<br>
+        <input type="checkbox" name="question2" value="Nutella">Nutella<br>
+        Quelle est votre marque préférée ?:<br>
+        <select name="question3" required>
+            <option value="ferrero">Ferrero</option>
+            <option value="nestle">Nestlé</option>
+            <option value="gerble">Gerblé</option>
+            <option value="innocent">Innocent</option>
+          </select><br>
+        Écrivez la raison pour laquelle c'est votre marque préférée:<br>
+        <textarea name="message" rows="10" cols="30">c'est ma marque préférée, parce que ...</textarea><br>
+        <button type="button">Envoyer mes réponses</button>
+    </form>
+</body>
+</html>
