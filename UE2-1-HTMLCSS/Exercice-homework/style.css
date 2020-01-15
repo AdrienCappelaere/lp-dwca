@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+
+  }
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr minmax(auto, 50vw) minmax(160px, 200px) 1fr;
+    grid-template-rows: 160px 50px minmax(50vh, auto) auto;
+    grid-template-areas: 
+    ". header header ."
+    ". nav nav ."
+    ". section aside ."
+    ". footer footer .";
+}
+
+header, nav, section, aside, footer, table, th, td {
+    border: solid 1px black;
+    border-collapse:collapse;
+    padding:2px;
+}
+
+img {
+    max-width: 250px;
+    height: auto;
+}
+
+table {
+    margin:auto;
+}
+
+th, td {
+    text-align:center;
+}
+
+.legende {
+    text-align:center;
+}
+header {
+    grid-area:header;
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content:space-evenly;
+}
+
+nav {
+    grid-area:nav;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content:space-evenly;
+    align-content:center;
+    align-items:center;
+}
+
+button {
+    background-color: cornflowerblue;
+    border: none;
+    border-radius:8px;
+    color: white;
+}
+
+section {
+    grid-area:section;
+}
+
+aside {
+    grid-area:aside;
+}
+
+footer {
+    background-color: rgb(20, 100, 220);
+    grid-area:footer;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content:space-evenly;
+    align-content:center;
+    align-items:center;
+    color:white;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color:white;
+}
+
+a:hover {
+    color: crimson;
+}
