@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    font-family:Raleway;
+    font-style:normal;
+    margin:0;
+}
+
+body {
+    height:543px;
+    display: grid;
+    grid-template-rows: 27% repeat(3,21%) 10%;
+    grid-template-areas:
+    "header"
+    "courant"
+    "livret"
+    "assurance"
+    "nav";
+}
+
+header {
+    background: linear-gradient(180deg, #1D8BDB 0%, rgba(24, 139, 222, 0.68) 100%);
+    color:#fff;
+    grid-area:header;
+    display:flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    justify-content:space-around;
+    align-items: center;
+    align-content: center;
+}
+
+header * {
+    margin:0;
+}
+
+.solde {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.livret {
+    grid-area:livret;
+
+}
+
+.courant {
+    grid-area:courant;
+}
+
+.assurance {
+    grid-area:assurance;
+}
+
+.livret1,.assurance1,.courant1 {
+    display: flex;
+    flex-wrap:nowrap;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items: center;
+    height: 80px;
+}
+
+.opeMontant {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.vert {
+    color: #229620;
+}
+
+.rouge {
+    color: #C70000;
+}
+
+
+
+.montantLivret,.montantCourant,.montantAssurance {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #555;
+}
+
+.ope {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    color: #555;
+}
+
+nav {
+    grid-area:nav;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    align-items: center;
+    align-content: center;
+    background: #F6F6F6;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 56px;
+}
+
+h2 {
+    background: #F6F6F6;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: #555;
+    padding:6px;
+}
+
+.total {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.menuTitre {
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    color: #757575;
+}
+
+.bleu {
+    color: #1D8BDB;
+}
